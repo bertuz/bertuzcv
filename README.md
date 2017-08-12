@@ -17,8 +17,6 @@ You can download the [PDF](/bertuzcv.pdf) version.
 it will be improved according to my free time. The next improvements will be:
 
 - Try to compile it in XeLaTeX
-- Include Lato font (no system installation required)
-- Include FontAwesome (no system installation required)
 - Make the photo filename a parameter
 - I18n
 
