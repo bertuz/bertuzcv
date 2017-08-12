@@ -64,6 +64,7 @@
   Extension = .ttf,
   UprightFont = *-Regular,
   BoldFont = *-Bold,
+  BoldItalicFont = *-BoldItalic,
   ItalicFont = *-Italic]
 \setdefaultlanguage{english}
 
