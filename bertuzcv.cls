@@ -33,16 +33,17 @@
 \RequirePackage{xparse}
 \RequirePackage{graphicx}
 
+%-------------------------------------------------------------------------------
+%                Configuration for directory locations
+%-------------------------------------------------------------------------------
+% Configure a directory location for fonts(default: 'fonts/')
+\newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
+\fontdir
 
 %-------------------------------------------------------------------------------
-%                class options
+%                fonts
 %-------------------------------------------------------------------------------
-
-
-%-------------------------------------------------------------------------------
-%                parameters
-%-------------------------------------------------------------------------------
-
+\newfontfamily\FA[Path=\@fontdir]{FontAwesome.otf}
 
 %-------------------------------------------------------------------------------
 %                overall design commands definitions
@@ -53,10 +54,15 @@
 %-------------------------------------------------------------------------------
 %                resume style definition
 %-------------------------------------------------------------------------------
-\pagestyle{empty}
+\pagestyle{plain}
 \geometry{a4paper, portrait, margin=1cm}
-\setmainfont[Ligatures=TeX]{Lato}
-\newfontfamily{\FA}{FontAwesome.otf}
+
+\setmainfont{Lato}[
+  Ligatures=TeX,
+  Path = \@fontdir,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold]
 \setdefaultlanguage{english}
 
 \setstretch{1.2}
