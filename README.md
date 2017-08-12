@@ -2,14 +2,13 @@
 
 **bertuz CV** is LaTeX template for a **CV(Curriculum Vitae)**. It has been written
 in order to keep a very clean and semantic LaTeX source. Changes to your Résumé
-should not overwhelm you and should be as quick as clean into your source file.
+should should be quick to do and the source should keep easy to read information right into your source file.
 
-The layout has been totally designed by me from scratch in order to suit my needs.
-Further contributions are more than welcome.
+The layout has been designed by me from scratch in order to suit my needs, but further contributions are more than welcome and encouraged.
 
 ## <a name="preview"></a>Preview
+You can download the [PDF](/bertuzcv.pdf) version.
 
-You can see [PDF](/bertuzcv.pdf)
 ![Bertuz CV preview](/bertuzcv.png?raw=true "Preview Bertuz CV")
 
 
