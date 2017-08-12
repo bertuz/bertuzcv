@@ -1,0 +1,76 @@
+\documentclass{bertuzcv}
+\author{Matteo Bertamini}
+
+\usepackage[pdftex,
+            pdfauthor={Matteo Bertamini},
+            pdftitle={CV Matteo Bertmaini},
+            pdfsubject={Curriculum Vitae of Matteo Bertamini},
+            pdfkeywords={CV curriculum vitae Matteo Bertamini},
+            pdfproducer={Lualatex},
+            pdfcreator={Lualatex with Matteo Bertamini's `bertuzcv` class}]{hyperref}
+
+
+\begin{document}
+  \header
+    {Matteo}
+    {Bertamini}
+    {Calle Gato, 11111 Madrid (España)}
+    {+34 123 456 789}
+    {matteoappfarmer@gmail.com}
+
+  \noindent
+  \begin{cvbox}{Who am I?}
+    Experienced full stack architect/developer looking for challenging and
+    rewarding hands-on opportunities. Passionate about tying together
+    neat yet durable solutions with state of art User Interfaces. Experienced
+    in managing and working middle and large projects, really comfortable with
+    both front and back end web technologies and Agile methodologies.
+  \end{cvbox}
+
+  \begin{cvbox}{Highlights}
+    \begin{itemize}[leftmargin=*,itemsep=-5pt]
+        \item Five years of accumulated experience in PHP and Javascript programming;
+        \item Skilled in customized Continuous Deployment and Continous Integration;
+        \item Deep knowledge of Symfony;
+        \item Experienced in Test Driven Development and Domain Driven Design.
+        \item Long lasting and tight collaboration with UI/UX experts for designing and developing interfaces.
+    \end{itemize}
+  \end{cvbox}
+
+  \noindent
+  \begin{cvbox}{Work experiences}
+    \begin{workExp}{January 2016}{Present}{PurrCode}{Torino - Madrid}{Italy - Spain}{Fullstack Architect and Developer}
+      {Product Owner, Scrum Master and part of the full-stack developer team of Hiss, a standalone platform for monitoring cat fights and dog threats.}
+      \workDetails
+      {PHP7 and Symfony 2.8;}
+      {Adoption of TDD;}
+      {Set up and maintainance of Continuous Integration with Jenkins;}
+      {Set up Docker, Vagrant and virtual machines for CI and development;}
+    \end{workExp}
+    \vspace{0.6cm}
+  \end{cvbox}
+
+  \begin{cvbox}{Languages}
+    \twocols{%
+      \textbf{Cat(alan)}\\
+      Mothertongue
+      \\
+
+      \textbf{Spanish}\\
+      Fluent writing and speaking}
+      {%
+      \textbf{English}\\
+      Fluent writing and speaking
+      \\
+
+      \textbf{European Portuguese}\\
+      Good writing and speaking}
+  \end{cvbox}
+
+  \begin{cvbox}{Education}
+    \eduItm
+      {2014}{University Of Paw (NapLand)}{Bachelor of Science in Computer Science}
+      {2015}{University Of Feline}{Master degree in Computer Science}
+  \end{cvbox}
+
+\end{document}
