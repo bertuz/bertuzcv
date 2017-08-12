@@ -1,5 +1,5 @@
 %% start of file `bertmaini-cv.cls'.
-%% Copyright 2017 Matteo Bertamini (bertmaini.matteo@gmail.com).
+%% Copyright 2017 Matteo Bertamini (bertamini.matteo@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the GNU General Public License v3.0,
@@ -50,6 +50,7 @@
 %-------------------------------------------------------------------------------
 \definecolor{blue}{HTML}{0099cd}
 \definecolor{darkgrey}{HTML}{3A3A3A}
+\definecolor{lightgrey}{HTML}{696969}
 
 %-------------------------------------------------------------------------------
 %                resume style definition
@@ -62,7 +63,8 @@
   Path = \@fontdir,
   Extension = .ttf,
   UprightFont = *-Regular,
-  BoldFont = *-Bold]
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic]
 \setdefaultlanguage{english}
 
 \setstretch{1.2}
