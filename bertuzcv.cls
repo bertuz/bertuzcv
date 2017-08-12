@@ -67,6 +67,7 @@
   rightupper=2cm,
   after skip=1cm,
   title=\textcolor{blue}{\textbf{\uppercase{#2}}},
+  before upper=\bigskip,
   breakable,
   #1
 }
