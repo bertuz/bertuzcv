@@ -93,11 +93,11 @@
 
 \makeatletter
   \newcommand{\checknextitmarg}{\@ifnextchar\bgroup{\gobblenextitmarg}{ \end{itemize}}}
-  \newcommand{\gobblenextitmarg}[1]{ \item#1aaaa\@ifnextchar\bgroup{\gobblenextitmarg}{ \end{itemize}}}
+  \newcommand{\gobblenextitmarg}[1]{ \item#1\@ifnextchar\bgroup{\gobblenextitmarg}{ \end{itemize}}}
 
   \newcommand{\workDetails}[1]{%
       \begin{itemize}[itemsep=-5pt,partopsep=10pt]
-        \item#1aaaa\checknextitmarg}
+        \item#1\checknextitmarg}
 
 
   \newcommand{\checknexteduarg}{\@ifnextchar\bgroup{\gobblenexteduarg}{}}
