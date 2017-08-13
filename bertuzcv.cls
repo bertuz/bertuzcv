@@ -136,7 +136,7 @@
           {
             #3\\
             {\FA\char"F095"}\ #4\hspace{0.3cm}\\
-            {\FA\char"F2B7"}\ #5
+            {\FA\char"F2B7"}\ \href{mailto:#5}{#5}
           }
       \end{minipage}
       \end{center}
