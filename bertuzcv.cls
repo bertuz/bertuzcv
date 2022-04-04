@@ -1,5 +1,5 @@
 %% start of file `bertuzcv.cls'.
-%% Copyright 2017 Matteo Bertamini (bertamini.matteo@gmail.com).
+%% Copyright 2022 Matteo Bertamini (www.bertamini.net).
 %
 % This work may be distributed and/or modified under the
 % conditions of the GNU General Public License v3.0,
@@ -31,6 +31,10 @@
 \RequirePackage{tikz}
 \RequirePackage{xparse}
 \RequirePackage{graphicx}
+\usepackage[fixed]{fontawesome5}
+\usepackage{luatextra}
+\usepackage[utf8]{luainputenc}
+\usepackage{emoji}
 
 %-------------------------------------------------------------------------------
 %                class options
@@ -99,7 +103,6 @@
       \begin{itemize}[itemsep=-5pt,partopsep=10pt]
         \item#1\checknextitmarg}
 
-
   \newcommand{\checknexteduarg}{\@ifnextchar\bgroup{\gobblenexteduarg}{}}
   \newcommand{\gobblenexteduarg}[3]{\\
 
@@ -119,18 +122,19 @@
     \begin{minipage}[t]{12cm}
       \begin{center}
         \begin{tikzpicture}[baseline=0cm]
-          \node[circle,draw,inner sep=0.9cm,fill overzoom image=photoCV] (A) {};
+          \node[circle,draw,inner sep=1cm,fill overzoom image=photoCV] (A) {};
         \end{tikzpicture}
         \hspace{0.3cm}
         \begin{minipage}[c]{8cm}
+          \vspace{0.7cm}
           {
             \huge {\color{blue}\uppercase{\textbf{#1} #2}}
           }
           \\[5pt]
           {
-            #3\\
-            {\FA\char"F095"}\ #4\hspace{0.3cm}\\
-            {\FA\char"F2B7"}\ #5
+            \faIcon{map-marker-alt}\hspace{0.1cm}#3\\
+            \faIcon{phone}\hspace{0.1cm}#4\hspace{0.1cm}\\
+            \faIcon[regular]{envelope}\hspace{0.1cm}#5\\
           }
       \end{minipage}
       \end{center}
